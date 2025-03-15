@@ -6,7 +6,7 @@ class CaesarCipher:
     
     def encrypt_text(self, text: str, key: int) -> str:
         alphabet_len = len(self.alphabet)
-        text = text.uperr()
+        text = text.upper()
         encrypted_text = []
         for letter in text:
             letter_index = self.alphabet.index(letter)
